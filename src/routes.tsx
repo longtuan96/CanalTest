@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import MainLayout from "./layouts/MainLayout/MainLayout.tsx";
+import HomePage from "./pages/HomePage/HomePage.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -8,11 +9,11 @@ export const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        path: "/movie",
-        element: <></>,
+        path: "/",
+        element: <HomePage />,
       },
       {
-        path: "/movie/:movieId",
+        path: "/:movieId",
         element: <></>,
       },
       {

@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
+import Navbar from "../../components/NavBar/NavBar";
 
 const MainLayout = () => {
   return (
-    <div className="bg-zinc-900 text-white flex flex-col h-screen">
-      {/* <MainNavbar /> */}
-      <div>PLACE FOR THE NAV BAR</div>
+    <div className=" h-screen w-screen text-white bg-zinc-800">
+      <Navbar />
       <Outlet />
     </div>
   );
