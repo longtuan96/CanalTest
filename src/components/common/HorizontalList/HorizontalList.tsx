@@ -1,7 +1,7 @@
 import { ReactNode, useEffect } from "react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
 import { AxiosError } from "axios";
-import useScrollControl from "../../hooks/useScrollControl";
+import useScrollControl from "../../../hooks/useScrollControl";
 
 export type HorizontalListProps = {
   title: string;
@@ -24,23 +24,23 @@ export default function HorizontalList(props: HorizontalListProps) {
   }, [checkScroll, children]);
 
   return (
-    <div className="flex flex-col gap-2 relative">
-      <h4 className="text-2xl font-semibold text-white mx-6 sm:mx-8 md:mx-12">
+    <div className="relative flex flex-col gap-2">
+      <h4 className="mx-6 text-2xl font-semibold text-white sm:mx-8 md:mx-12">
         {title}
       </h4>
       {!isAtStart && (
-        <button className="absolute bg-black bg-opacity-50 shadow-md backdrop-blur p-2 z-10 rounded left-2 top-1/2 -translate-y-1/2">
+        <button className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded bg-black bg-opacity-50 p-2 shadow-md backdrop-blur">
           <ArrowLeftIcon
-            className="w-6 h-6"
+            className="h-6 w-6"
             title="scroll left"
             onClick={scroll.bind(null, true)}
           />
         </button>
       )}
       {!isAtEnd && (
-        <button className="absolute bg-black bg-opacity-50 shadow-md backdrop-blur p-2 z-10 rounded right-2 top-1/2 -translate-y-1/2">
+        <button className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded bg-black bg-opacity-50 p-2 shadow-md backdrop-blur">
           <ArrowRightIcon
-            className="w-6 h-6"
+            className="h-6 w-6"
             title="scroll right"
             onClick={scroll.bind(null, false)}
           />
@@ -48,7 +48,7 @@ export default function HorizontalList(props: HorizontalListProps) {
       )}
       <div
         ref={scrollDivRef}
-        className="flex flex-row gap-6 overflow-x-auto py-2 px-6 sm:px-8 md:px-12 relative scrollbar-hide"
+        className="scrollbar-hide relative flex flex-row gap-6 overflow-x-auto px-6 py-2 sm:px-8 md:px-12"
       >
         {!!error && <span>{"Fetch Data failed!"}</span>}
         {children}

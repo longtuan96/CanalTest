@@ -2,7 +2,7 @@ import { UserIcon } from "@heroicons/react/24/solid";
 
 import { Link, NavLinkProps } from "react-router-dom";
 import NavItem from "./NavItem/NavItem";
-import { Button } from "../Button/Button";
+import { Button } from "../common/Button/Button";
 
 const NAVBAR_ITEMS: NavLinkProps[] = [
   {
@@ -32,8 +32,8 @@ export default function Navbar() {
             My Movies<sup>+</sup>
           </strong>
         </Link>
-        {NAVBAR_ITEMS.map((item) => {
-          return <NavItem item={item} />;
+        {NAVBAR_ITEMS.map((item, idx) => {
+          return <NavItem item={item} key={idx} />;
         })}
       </div>
       <div className="flex items-center gap-4">

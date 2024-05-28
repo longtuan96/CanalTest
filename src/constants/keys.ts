@@ -7,8 +7,8 @@ export const QUERY_KEYS = {
 };
 
 export const MOVIES_LIST_TYPE = {
-  POPULAR: "popular",
-  NOW_PLAYING: "now_playing",
-  TOP_RATED: "top_rated",
-  UPCOMING: "upcoming",
+  POPULAR: "movie/popular",
+  NOW_PLAYING: "movie/now_playing",
+  TOP_RATED: "movie/top_rated",
+  UPCOMING: "movie/upcoming",
 };

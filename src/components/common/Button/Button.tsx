@@ -6,13 +6,16 @@ type ButtonProps = DetailedHTMLProps<
   HTMLButtonElement
 > & {
   className?: string;
-  size: string;
 };
 
-export const Button = ({ className, children, size }: ButtonProps) => {
+export const Button = ({ className, children, onClick }: ButtonProps) => {
   return (
     <button
-      className={clsx("bg-red-600", size === "sm" && "text-sm", className)}
+      className={clsx(
+        "border-none bg-red-600 hover:border-none hover:bg-red-400",
+        className,
+      )}
+      onClick={onClick}
     >
       {children}
     </button>

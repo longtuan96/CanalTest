@@ -12,7 +12,7 @@ import {
 const { LIST } = QUERY_KEYS;
 
 const getMovieList = async (payload: GetMovieListRequestPayload) => {
-  const response = await api.get<MovieListResponse>(`movie/${payload.type}`, {
+  const response = await api.get<MovieListResponse>(`${payload.type}`, {
     params: validate(GetMovieListRequestPayloadSchema, payload),
   });
   return validate(MovieListResponseSchema, response.data);

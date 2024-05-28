@@ -1,18 +1,48 @@
-import Carousel from "../../components/Carousel/Carousel";
+import { useEffect, useState } from "react";
+import MovieCarousel from "../../components/MovieCarousel/MovieCarousel";
+import { moviePopularMockData } from "../../services/movie/movie.mock";
+import { MovieItemResponse } from "../../services/movie/movie.type";
+import HorizontalList from "../../components/common/HorizontalList/HorizontalList";
+import { Card } from "../../components/common/Card/Card";
 
 const HomePage = () => {
-  let slides = [
-    "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
-    "https://wallpapercave.com/wp/wp3386769.jpg",
-    "https://wallpaperaccess.com/full/809523.jpg",
-    "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
-  ];
+  const [carouselData, setCarouselData] = useState<MovieItemResponse[]>([]);
+  const [movieNowPlayingData, setMovieNowPlayingData] = useState<
+    MovieItemResponse[]
+  >([]);
+
+  useEffect(() => {
+    const result = moviePopularMockData.results;
+    setMovieNowPlayingData(result);
+    setCarouselData(result);
+  }, []);
+
   return (
     <div className="">
-      <div className=" w-screen h-screen">
-        <Carousel slides={slides} />
+      <div className=" h-screen w-screen">
+        <MovieCarousel data={carouselData} />
       </div>
-      <div></div>
+      <div>
+        <HorizontalList title="Now in Theater">
+          {movieNowPlayingData.map((item) => {
+            return <Card type="movie" data={item} key={item.id} />;
+          })}
+        </HorizontalList>
+      </div>
+      <div>
+        <HorizontalList title="Now in Theater">
+          {movieNowPlayingData.map((item) => {
+            return <Card type="movie" data={item} key={item.id} />;
+          })}
+        </HorizontalList>
+      </div>
+      <div>
+        <HorizontalList title="Now in Theater">
+          {movieNowPlayingData.map((item) => {
+            return <Card type="movie" data={item} key={item.id} />;
+          })}
+        </HorizontalList>
+      </div>
     </div>
   );
 };

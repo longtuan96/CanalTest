@@ -3,6 +3,7 @@ import clsx from "clsx";
 
 type NavProps = {
   item: NavLinkProps;
+  key: number;
 };
 
 export default function ({ item }: NavProps) {
