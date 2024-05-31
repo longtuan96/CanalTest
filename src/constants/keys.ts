@@ -4,11 +4,14 @@ export const QUERY_KEYS = {
   DETAILS: "details",
   CREDITS: "credits",
   VIDEOS: "videos",
+  SEARCH: "search",
 };
 
-export const MOVIES_LIST_TYPE = {
-  POPULAR: "movie/popular",
-  NOW_PLAYING: "movie/now_playing",
-  TOP_RATED: "movie/top_rated",
-  UPCOMING: "movie/upcoming",
+export const LIST_TYPE = {
+  MOVIE_POPULAR: "movie/popular",
+  MOVIE_NOW_PLAYING: "movie/now_playing",
+  MOVIE_TOP_RATED: "movie/top_rated",
+  MOVIE_UPCOMING: "movie/upcoming",
+  MOVIE_DISCOVER: "discover/movie",
+  SEARCH_MOVIE: "search/movie",
 };

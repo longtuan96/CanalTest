@@ -1,25 +1,58 @@
 import { useQuery } from "@tanstack/react-query";
-import { QUERY_KEYS } from "../../constants/keys";
-import validate from "../../utils/validate";
+import validateAndParse from "../../utils/validateAndParse";
 import { api } from "../api";
 import {
+  GetMovieDetailRequest,
   GetMovieListRequestPayload,
-  GetMovieListRequestPayloadSchema,
+  MovieDetailResponse,
+  MovieDetailResponseSchema,
   MovieListResponse,
   MovieListResponseSchema,
+  searchMovieRequest,
 } from "./movie.type";
+import { LIST_TYPE, QUERY_KEYS } from "../../constants/keys";
+import createQueryParams from "../../utils/createQueryParams";
 
-const { LIST } = QUERY_KEYS;
+const { LIST, DETAILS, SEARCH } = QUERY_KEYS;
 
 const getMovieList = async (payload: GetMovieListRequestPayload) => {
   const response = await api.get<MovieListResponse>(`${payload.type}`, {
-    params: validate(GetMovieListRequestPayloadSchema, payload),
+    params: createQueryParams(),
   });
-  return validate(MovieListResponseSchema, response.data);
+  return validateAndParse(MovieListResponseSchema, response.data);
 };
 
 export const useGetMovieList = (payload: GetMovieListRequestPayload) =>
   useQuery({
-    queryKey: [LIST, payload.type],
+    queryKey: [LIST, payload],
     queryFn: () => getMovieList(payload),
+  });
+
+const getMovieDetail = async (payload: GetMovieDetailRequest) => {
+  const response = await api.get<MovieDetailResponse>(
+    `movie/${payload.movieId}`,
+    { params: createQueryParams() },
+  );
+  return validateAndParse(MovieDetailResponseSchema, response.data);
+};
+
+export const useGetMovieDetail = (payload: GetMovieDetailRequest) =>
+  useQuery({
+    queryKey: [DETAILS, payload],
+    queryFn: () => getMovieDetail(payload),
+  });
+
+const searchMovie = async (payload: searchMovieRequest) => {
+  const response = await api.get<MovieListResponse>(
+    `${LIST_TYPE.SEARCH_MOVIE}`,
+    { params: createQueryParams(payload) },
+  );
+
+  return validateAndParse(MovieListResponseSchema, response.data);
+};
+
+export const useSearchMovie = (payload: searchMovieRequest) =>
+  useQuery({
+    queryKey: [SEARCH, payload],
+    queryFn: () => searchMovie(payload),
   });

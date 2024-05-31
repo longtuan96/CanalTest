@@ -1,0 +1,19 @@
+.carousel-button {
+  @apply z-10 bg-transparent text-white transition delay-150 ease-linear hover:border-none hover:bg-white hover:text-black focus:outline-none;
+}
+.carousel-mask {
+  background: rgb(0, 36, 17);
+  background: linear-gradient(
+    67deg,
+    rgba(0, 36, 17, 0.8897934173669468) 34%,
+    rgba(18, 18, 24, 0.3519782913165266) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+.carousel-mask-hover {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

@@ -1,27 +1,31 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import {
   ChevronRightIcon,
   ChevronLeftIcon,
   StarIcon,
   ArrowTrendingUpIcon,
+  PlayCircleIcon,
 } from "@heroicons/react/24/solid";
-import clsx from "clsx";
+import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
 import { MovieItemResponse } from "../../services/movie/movie.type";
 import createImgUrl from "../../utils/createImgUrl";
 import { Button } from "../common/Button/Button";
+import { useNavigate } from "react-router-dom";
+import "./MovieCarousel.css";
+import { ModalType } from "../../services/video/video.type";
+import { BUTTON } from "../../constants/names";
 
 type MovieCarouselProps = {
   data: MovieItemResponse[];
+  handleShowVideo: (movieId: number, variation: ModalType) => void;
 };
 
-export default function MovieCarousel({ data }: MovieCarouselProps) {
+export default function MovieCarousel({
+  data,
+  handleShowVideo,
+}: MovieCarouselProps) {
   const [current, setCurrent] = useState(0);
-  const [isMouseIn, setIsMouseIn] = useState(true);
-  const divRef = useRef<HTMLDivElement>(null);
-  const handleMouse = (isIn: boolean) => {
-    setIsMouseIn(true);
-  };
-
+  const navigate = useNavigate();
   let previousSlide = () => {
     if (current === 0) setCurrent(data.length - 1);
     else setCurrent(current - 1);
@@ -32,12 +36,12 @@ export default function MovieCarousel({ data }: MovieCarouselProps) {
     else setCurrent(current + 1);
   };
 
+  const handleToDetail = (movieId: number) => {
+    navigate(`/${movieId}`);
+  };
+
   return (
-    <div
-      className="relative h-full overflow-hidden"
-      onMouseOver={() => handleMouse(true)}
-      onMouseOut={() => handleMouse(false)}
-    >
+    <div className="relative h-full overflow-hidden">
       <div
         className="relative flex h-full w-full transition duration-700 ease-out"
         style={{
@@ -52,12 +56,7 @@ export default function MovieCarousel({ data }: MovieCarouselProps) {
                 className="h-full w-full object-fill"
                 src={createImgUrl("movie", s.backdrop_path)}
               />
-              <div
-                className={clsx(
-                  isMouseIn ? "carousel-mask-hover visible" : "invisible",
-                  "carousel-mask absolute left-0 top-0   h-full w-full bg-opacity-50",
-                )}
-              >
+              <div className="carousel-mask carousel-mask-hover absolute left-0 top-0   h-full w-full bg-opacity-50">
                 <div className=" absolute left-44 top-60 flex w-2/5 flex-col gap-y-5 ">
                   <span className="title">{s.title}</span>
                   <p className=" w-4/5">{s.overview}</p>
@@ -73,14 +72,24 @@ export default function MovieCarousel({ data }: MovieCarouselProps) {
                   </div>
                   <div className="flex gap-3">
                     <Button
-                      className=" size-1/4"
-                      onClick={() => {
-                        console.log("test");
-                      }}
+                      className="flex size-1/4 items-center justify-center gap-2"
+                      onClick={() => handleShowVideo(s.id, "movie")}
                     >
-                      Details
+                      {BUTTON.WATCH_NOW}{" "}
+                      <PlayCircleIcon className="size-5 text-white" />
                     </Button>
-                    <Button className=" size-1/4">Play Trailer</Button>
+                    <Button
+                      className="size-1/4"
+                      onClick={() => handleShowVideo(s.id, "trailer")}
+                    >
+                      {BUTTON.PLAY_TRAILER}
+                    </Button>
+                    <Button className="p-0" background={false}>
+                      <ExclamationCircleIcon
+                        className=" size-6 text-white"
+                        onClick={() => handleToDetail(s.id)}
+                      />
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -99,7 +108,6 @@ export default function MovieCarousel({ data }: MovieCarouselProps) {
       </div>
 
       <div
-        ref={divRef}
         className="absolute bottom-20 flex w-full items-end justify-start gap-5 py-4 transition duration-500 ease-in-out"
         style={{
           transform: `translateX(${47 - current * (100 / 13)}%)`,
