@@ -7,7 +7,6 @@ type ButtonProps = DetailedHTMLProps<
 > & {
   className?: string;
   background?: boolean;
-  variation?: "primary" | "secondary";
 };
 
 export const Button = ({
@@ -15,18 +14,15 @@ export const Button = ({
   children,
   onClick,
   background = true,
-  variation = "primary",
 }: ButtonProps) => {
   return (
     <button
       className={clsx(
-        " min-w-52 rounded-md bg-red-600 p-2 hover:border-none hover:bg-red-400 focus:outline-none",
+        " min-w-52 rounded-md bg-red-600 p-2  hover:bg-red-400 ",
         background
           ? "bg-red-600 hover:bg-red-400"
-          : "bg-transparent hover:bg-transparent",
-        variation === "secondary"
-          ? "border-red-600 bg-transparent"
-          : "border-none",
+          : "border-red-600 bg-transparent hover:border-red-600 hover:bg-transparent",
+
         className,
       )}
       onClick={onClick}

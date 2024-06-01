@@ -64,7 +64,7 @@ export default function MovieCarousel({
                   style={{ maxHeight: "70%" }}
                 >
                   <h1 className="fontsize-title">{s.title}</h1>
-                  <p className=" fontsize-text max-h-24 w-4/5 overflow-hidden">
+                  <p className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify">
                     {s.overview}
                   </p>
                   <div className="flex" style={{ gap: "8%" }}>

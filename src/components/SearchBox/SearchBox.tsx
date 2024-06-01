@@ -20,7 +20,7 @@ export const SearchBox = ({}: SearchBoxProps) => {
   );
 
   const handleSearch = useCallback(() => {
-    navigate(`/search?query=${inputValue}`);
+    navigate(`/movie/search?query=${inputValue}`);
   }, [inputValue]);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {

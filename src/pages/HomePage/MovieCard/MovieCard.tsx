@@ -8,7 +8,7 @@ type CardProps = {
 
 export const MovieCard = ({ data }: CardProps) => {
   return (
-    <Link to={`/${data.id}`} key={data.id} title={data.title}>
+    <Link to={`/movie/${data.id}`} key={data.id} title={data.title}>
       <img
         className="relative min-w-64"
         src={createImgUrl("movie", data.poster_path)}

@@ -17,7 +17,7 @@ type InfoSectionProp = {
 export const InfoSection = ({ data }: InfoSectionProp) => {
   if (data) {
     return (
-      <section className="container relative col-span-5 grid w-full grid-cols-2 gap-4 ">
+      <section className="container relative grid w-full grid-cols-10 gap-4 ">
         <div id="poster" className="">
           <img
             className="w-full"
@@ -60,10 +60,7 @@ export const InfoSection = ({ data }: InfoSectionProp) => {
               {BUTTON.WATCH_NOW}{" "}
               <PlayCircleIcon className="size-5 text-white" />
             </Button>
-            <Button
-              variation="secondary"
-              className="flex items-center justify-center gap-2"
-            >
+            <Button className="flex items-center justify-center gap-2">
               {BUTTON.PLAY_TRAILER}
             </Button>
           </div>

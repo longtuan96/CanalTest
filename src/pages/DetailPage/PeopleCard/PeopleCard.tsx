@@ -7,8 +7,8 @@ type PeopleCardProp = {
 
 export const PeopleCard = ({ data }: PeopleCardProp) => {
   return (
-    <div className=" max-w-40  rounded-lg bg-white">
-      <div id="card-image" className=" min-h-44">
+    <div className=" min-w-40  rounded-lg bg-white">
+      <div id="card-image" className=" min-h-60">
         <img
           className="h-full w-full rounded-t-lg object-fill"
           alt={data.name}

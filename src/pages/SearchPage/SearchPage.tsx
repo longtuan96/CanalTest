@@ -24,10 +24,10 @@ export const SearchPage = () => {
       {resultSearchMovie.data ? (
         <div className=" h-screen w-screen px-10 pt-24">
           <section>
-            <h1>Search Result: {query}</h1>
-            <div className="max-h-5xl mt-10 grid grid-cols-6 gap-20">
+            <h1 className="fontsize-title">Search Result: {query}</h1>
+            <div className="mt-10 grid grid-cols-4 gap-20">
               {resultSearchMovie.data.results.map((item) => (
-                <MovieCard data={item} />
+                <MovieCard key={item.id} data={item} />
               ))}
             </div>
           </section>
