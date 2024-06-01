@@ -17,7 +17,7 @@ type InfoSectionProp = {
 export const InfoSection = ({ data }: InfoSectionProp) => {
   if (data) {
     return (
-      <section className="container relative grid w-full grid-cols-4 gap-4 ">
+      <section className="container relative col-span-5 grid w-full grid-cols-2 gap-4 ">
         <div id="poster" className="">
           <img
             className="w-full"
@@ -26,9 +26,9 @@ export const InfoSection = ({ data }: InfoSectionProp) => {
             style={{ zIndex: "auto", position: "relative" }}
           />
         </div>
-        <div id="info" className="col-span-3 ">
-          <strong className="text-5xl">{data.title}</strong>
-          <p className="mt-1">
+        <div id="info" className="">
+          <strong className="fontsize-title">{data.title}</strong>
+          <p className="fontsize-subtitle mt-1">
             Release Date: {moment(data.release_date).format("DD/MM/YYYY")}
           </p>
           <div className=" mt-3 text-sm text-zinc-300">
@@ -42,8 +42,8 @@ export const InfoSection = ({ data }: InfoSectionProp) => {
             </span>
           </div>
           <div className="mt-3">
-            <strong>Overview</strong>
-            <p className="w-96 text-zinc-300">{data.overview}</p>
+            <b className="fontsize-subtitle">Overview</b>
+            <p className=" fontsize-text text-zinc-300">{data.overview}</p>
           </div>
           <div className="mt-3 flex gap-14">
             <span className=" inline-flex gap-4">

@@ -4,6 +4,7 @@ import getVideoId from "../../../utils/getVideoId";
 import { useGetVideo } from "../../../services/video/video";
 import { ModalType } from "../../../services/video/video.type";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
+import { Loader } from "../Loader/Loader";
 
 type ModalProps = {
   movieId: number;
@@ -31,16 +32,18 @@ export default function Modal({
   const resultVideo = useGetVideo({ movieId });
 
   const renderContent = () => {
-    if (
-      variation === "trailer" &&
-      movieId &&
-      !resultVideo.isPending &&
-      resultVideo.data
-    ) {
-      return (
+    if (variation === "trailer" && movieId) {
+      return resultVideo.isPending && resultVideo.data === undefined ? (
+        <div
+          style={{ width: "80vw", height: "80vh" }}
+          className="flex-center bg-black"
+        >
+          <Loader />
+        </div>
+      ) : (
         <iframe
           style={{ width: "80vw", height: "80vh" }}
-          src={`https://www.youtube.com/embed/${getVideoId(resultVideo.data.results)}?autoplay=1&start=0`}
+          src={`https://www.youtube-nocookie.com/embed/${getVideoId(resultVideo.data?.results)}?autoplay=1&start=0`}
           title="YouTube video player"
           allow="accelerometer; autoplay; encrypted-media;"
           referrerPolicy="strict-origin-when-cross-origin"

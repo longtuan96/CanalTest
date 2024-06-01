@@ -17,3 +17,10 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.fontsize-title {
+  font-size: clamp(1.875rem, 1vw + 1rem, 3.125rem);
+}
+.fontsize-text {
+  font-size: clamp(0.875rem, 1vw + 1rem, 1.25rem);
+}

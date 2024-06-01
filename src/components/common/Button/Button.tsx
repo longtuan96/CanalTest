@@ -20,7 +20,7 @@ export const Button = ({
   return (
     <button
       className={clsx(
-        " bg-red-600 hover:border-none hover:bg-red-400 focus:outline-none",
+        " min-w-52 rounded-md bg-red-600 p-2 hover:border-none hover:bg-red-400 focus:outline-none",
         background
           ? "bg-red-600 hover:bg-red-400"
           : "bg-transparent hover:bg-transparent",

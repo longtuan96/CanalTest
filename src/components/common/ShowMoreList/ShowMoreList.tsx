@@ -11,10 +11,11 @@ export const ShowMoreList = ({ title, children }: ShowMoreListProps) => {
     setShowMore(!showMore);
   };
   return (
-    <>
-      <h1>{title}</h1>
+    <div className="col-span-5 w-full">
+      <h1 className="fontsize-subtitle">{title}</h1>
       <div
-        className={`grid ${showMore ? "h-fit" : " h-72"} mt-4 grid-cols-8 gap-5 overflow-hidden`}
+        className={`mt-4  grid grid-cols-4 gap-5 overflow-scroll`}
+        style={{ height: "264px" }}
       >
         {children}
       </div>
@@ -23,6 +24,6 @@ export const ShowMoreList = ({ title, children }: ShowMoreListProps) => {
           {!showMore ? "Show More" : "Show Less"}
         </button>
       </div>
-    </>
+    </div>
   );
 };

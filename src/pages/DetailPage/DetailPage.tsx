@@ -34,15 +34,14 @@ export const DetailPage = () => {
         backgroundImage: `url(${createImgUrl("movie", resultMovieDetail.data?.backdrop_path)})`,
       }}
     >
-      <div className="z-10 mt-64 flex flex-col gap-10">
+      <div className=" absolute left-0 top-0 z-10  grid h-full  grid-cols-11 px-24 py-32">
         <InfoSection data={resultMovieDetail.data} />
-        <div className="w-full overflow-scroll">
-          <ShowMoreList title="The Casts">
-            {resultCredit.data?.cast.map((item) => (
-              <PeopleCard key={item.id} data={item} />
-            ))}
-          </ShowMoreList>
-        </div>
+        <div className=" col-span-1"></div>
+        <ShowMoreList title="The Casts">
+          {resultCredit.data?.cast.map((item) => (
+            <PeopleCard key={item.id} data={item} />
+          ))}
+        </ShowMoreList>
       </div>
       <div
         id="detail-mask"

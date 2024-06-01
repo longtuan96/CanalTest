@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import MovieCarousel from "../../components/MovieCarousel/MovieCarousel";
-import { moviePopularMockData } from "../../services/movie/movie.mock";
 import { MovieItemResponse } from "../../services/movie/movie.type";
 import HorizontalList from "../../components/common/HorizontalList/HorizontalList";
 import { MovieCard } from "./MovieCard/MovieCard";
@@ -13,10 +12,6 @@ const { MOVIE_POPULAR, MOVIE_NOW_PLAYING, MOVIE_TOP_RATED, MOVIE_UPCOMING } =
   LIST_TYPE;
 
 const HomePage = () => {
-  const [carouselData, setCarouselData] = useState<MovieItemResponse[]>([]);
-  const [movieNowPlayingData, setMovieNowPlayingData] = useState<
-    MovieItemResponse[]
-  >([]);
   const [openModal, setOpenModal] = useState<boolean>(true);
   const [seclectedMovieId, setSeclectedMovieId] = useState<number | undefined>(
     undefined,
@@ -34,36 +29,36 @@ const HomePage = () => {
   };
 
   return (
-    <div className="">
-      <div className=" h-screen w-screen">
+    <div className="flex flex-col gap-5">
+      <section className=" h-screen w-screen">
         {resultPopular.isSuccess && (
           <MovieCarousel
             data={resultPopular.data.results}
             handleShowVideo={handleShowVideo}
           />
         )}
-      </div>
-      <div>
+      </section>
+      <section>
         <HorizontalList title="Now in Theater">
-          {movieNowPlayingData.map((item) => {
+          {resultNowPlaying.data?.results.map((item) => {
             return <MovieCard data={item} key={item.id} />;
           })}
         </HorizontalList>
-      </div>
-      <div>
-        <HorizontalList title="Now in Theater">
-          {movieNowPlayingData.map((item) => {
+      </section>
+      <section>
+        <HorizontalList title="Top Rated">
+          {resultTopRated.data?.results.map((item) => {
             return <MovieCard data={item} key={item.id} />;
           })}
         </HorizontalList>
-      </div>
-      <div>
-        <HorizontalList title="Now in Theater">
-          {movieNowPlayingData.map((item) => {
+      </section>
+      <section>
+        <HorizontalList title="Release Soon">
+          {resultUpComing.data?.results.map((item) => {
             return <MovieCard data={item} key={item.id} />;
           })}
         </HorizontalList>
-      </div>
+      </section>
       {openModal && seclectedMovieId && modalVariation && (
         <Modal
           variation={modalVariation}

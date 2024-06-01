@@ -20,6 +20,8 @@ type MovieCarouselProps = {
   handleShowVideo: (movieId: number, variation: ModalType) => void;
 };
 
+const widthImgItem = 6;
+
 export default function MovieCarousel({
   data,
   handleShowVideo,
@@ -37,7 +39,7 @@ export default function MovieCarousel({
   };
 
   const handleToDetail = (movieId: number) => {
-    navigate(`/${movieId}`);
+    navigate(`/movie/${movieId}`);
   };
 
   return (
@@ -53,14 +55,19 @@ export default function MovieCarousel({
           return (
             <div className="relative min-w-full" key={idx}>
               <img
-                className="h-full w-full object-fill"
+                className="object-fit h-full w-full"
                 src={createImgUrl("movie", s.backdrop_path)}
               />
-              <div className="carousel-mask carousel-mask-hover absolute left-0 top-0   h-full w-full bg-opacity-50">
-                <div className=" absolute left-44 top-60 flex w-2/5 flex-col gap-y-5 ">
-                  <span className="title">{s.title}</span>
-                  <p className=" w-4/5">{s.overview}</p>
-                  <div className="flex gap-28">
+              <div className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50">
+                <div
+                  className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
+                  style={{ maxHeight: "70%" }}
+                >
+                  <h1 className="fontsize-title">{s.title}</h1>
+                  <p className=" fontsize-text max-h-24 w-4/5 overflow-hidden">
+                    {s.overview}
+                  </p>
+                  <div className="flex" style={{ gap: "8%" }}>
                     <span className=" inline-flex gap-4">
                       <StarIcon className="size-5 text-yellow-400" />{" "}
                       {`${s.vote_average.toFixed(2)}/10 (${s.vote_count} votes)`}
@@ -75,7 +82,7 @@ export default function MovieCarousel({
                       className="flex size-1/4 items-center justify-center gap-2"
                       onClick={() => handleShowVideo(s.id, "movie")}
                     >
-                      {BUTTON.WATCH_NOW}{" "}
+                      {BUTTON.WATCH_NOW}
                       <PlayCircleIcon className="size-5 text-white" />
                     </Button>
                     <Button
@@ -108,10 +115,11 @@ export default function MovieCarousel({
       </div>
 
       <div
-        className="absolute bottom-20 flex w-full items-end justify-start gap-5 py-4 transition duration-500 ease-in-out"
+        className="absolute bottom-20 flex w-full items-end justify-start py-4 transition duration-500 ease-in-out"
         style={{
-          transform: `translateX(${47 - current * (100 / 13)}%)`,
+          transform: `translateX(${50 - widthImgItem / 2 - current * (6 + 0.5)}%)`,
           zIndex: 3,
+          gap: `0.5%`,
         }}
       >
         {data.map((s, i) => {
@@ -121,7 +129,8 @@ export default function MovieCarousel({
                 setCurrent(i);
               }}
               key={"pic" + i}
-              className={`h-64 w-64 cursor-pointer transition  duration-500 ease-in-out ${i === current && "scale-150"}`}
+              className={`cursor-pointer transition  duration-500 ease-in-out ${i === current && "scale-150"}`}
+              style={{ width: `${widthImgItem}%` }}
               src={createImgUrl("movie", s.poster_path)}
             />
           );
