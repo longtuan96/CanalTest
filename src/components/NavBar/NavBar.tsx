@@ -1,8 +1,5 @@
-import { UserIcon } from "@heroicons/react/24/solid";
-
 import { Link, NavLinkProps, useLocation } from "react-router-dom";
 import NavItem from "./NavItem/NavItem";
-import { Button } from "../common/Button/Button";
 import { SearchBox } from "../SearchBox/SearchBox";
 import { useEffect, useState } from "react";
 

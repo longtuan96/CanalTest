@@ -1,5 +1,5 @@
 import { XMarkIcon } from "@heroicons/react/24/solid";
-import { useEffect, MouseEvent, useState } from "react";
+import { useEffect, MouseEvent } from "react";
 import getVideoId from "../../../utils/getVideoId";
 import { useGetVideo } from "../../../services/video/video";
 import { ModalType } from "../../../services/video/video.type";

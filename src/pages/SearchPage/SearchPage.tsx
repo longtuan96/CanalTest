@@ -1,8 +1,5 @@
 import { useSearchParams } from "react-router-dom";
 import { MovieCard } from "../HomePage/MovieCard/MovieCard";
-import { useState } from "react";
-import { moviePopularMockData } from "../../services/movie/movie.mock";
-import { MovieItemResponse } from "../../services/movie/movie.type";
 import { useSearchMovie } from "../../services/movie/movie";
 import { Loader } from "../../components/common/Loader/Loader";
 

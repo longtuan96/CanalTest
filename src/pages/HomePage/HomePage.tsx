@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import MovieCarousel from "../../components/MovieCarousel/MovieCarousel";
-import { MovieItemResponse } from "../../services/movie/movie.type";
 import HorizontalList from "../../components/common/HorizontalList/HorizontalList";
 import { MovieCard } from "./MovieCard/MovieCard";
 import Modal from "../../components/common/Modal/Modal";

@@ -1,14 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { movieDetailMockData } from "../../services/movie/movie.mock";
-import { MovieDetailResponse } from "../../services/movie/movie.type";
 import createImgUrl from "../../utils/createImgUrl";
-import { InfoSection } from "./InfoSection/InfoSection";
-import { GetCreditResponse } from "../../services/credit/credit.type";
-import { creditMockData } from "../../services/credit/credit.mock";
 import HorizontalList from "../../components/common/HorizontalList/HorizontalList";
 import { PeopleCard } from "./PeopleCard/PeopleCard";
-import { ShowMoreList } from "../../components/common/ShowMoreList/ShowMoreList";
 import { Loader } from "../../components/common/Loader/Loader";
 import { useGetMovieDetail } from "../../services/movie/movie";
 import { useGetCredit } from "../../services/credit/credit";
@@ -20,7 +14,6 @@ import {
   PlayCircleIcon,
   StarIcon,
 } from "@heroicons/react/24/solid";
-import { useGetVideo } from "../../services/video/video";
 import { ModalType } from "../../services/video/video.type";
 import Modal from "../../components/common/Modal/Modal";
 export const DetailPage = () => {
