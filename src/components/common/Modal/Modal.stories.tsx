@@ -4,6 +4,13 @@ import Modal from "./Modal";
 
 const meta = {
   component: Modal,
+  decorators: [
+    (Story) => (
+      <div className="text-white">
+        <Story />
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof Modal>;
 
 export default meta;

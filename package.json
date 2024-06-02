@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "build-storybook-docs": "storybook build --docs",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^1.5.0",
     "@eslint/js": "^9.3.0",
+    "@storybook/addon-a11y": "^8.1.5",
     "@storybook/addon-essentials": "^8.1.5",
     "@storybook/addon-interactions": "^8.1.5",
     "@storybook/addon-links": "^8.1.5",

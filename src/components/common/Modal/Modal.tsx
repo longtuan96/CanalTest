@@ -70,6 +70,7 @@ export default function Modal({
     <div
       className="fixed inset-0 z-30 flex w-screen flex-col items-center overflow-y-auto px-4 py-8"
       role="dialog"
+      aria-label="video-modal"
       aria-modal="true"
     >
       <div
