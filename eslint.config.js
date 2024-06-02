@@ -20,5 +20,6 @@ export default [
       "react/jsx-props-no-spreading": ["warn"],
       "react/no-unescaped-entities": ["off"],
     },
+    ignores: ["dist/"],
   },
 ];

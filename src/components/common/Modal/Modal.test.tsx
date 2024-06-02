@@ -1,6 +1,4 @@
 import { describe, expect, test, vi } from "vitest";
-
-import { MemoryRouter } from "react-router-dom";
 import Modal from "./Modal";
 import { TEST_MOVIE_ID } from "../../../test/constants";
 import { getTree } from "../../../test/utils";

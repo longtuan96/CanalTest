@@ -28,12 +28,12 @@ export default function MovieCarousel({
 }: MovieCarouselProps) {
   const [current, setCurrent] = useState(0);
   const navigate = useNavigate();
-  let previousSlide = () => {
+  const previousSlide = () => {
     if (current === 0) setCurrent(data.length - 1);
     else setCurrent(current - 1);
   };
 
-  let nextSlide = () => {
+  const nextSlide = () => {
     if (current === data.length - 1) setCurrent(0);
     else setCurrent(current + 1);
   };

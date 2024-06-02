@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { getTree, render, screen } from "../../test/utils";
+import { getTree } from "../../test/utils";
 import Navbar from "./NavBar";
 import { MemoryRouter } from "react-router-dom";
 

@@ -3,8 +3,7 @@ import "./SearchBox.css";
 import { ChangeEvent, KeyboardEvent, useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-type SearchBoxProps = {};
-export const SearchBox = ({}: SearchBoxProps) => {
+export const SearchBox = () => {
   const [inputValue, setInputValue] = useState<string>("");
 
   const navigate = useNavigate();

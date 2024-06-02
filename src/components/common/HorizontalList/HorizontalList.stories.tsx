@@ -18,7 +18,7 @@ export const Movie: Story = {
   args: {
     title: "Movie",
     children: moviePopularMockData.results.map((item) => (
-      <MovieCard data={item} />
+      <MovieCard data={item} key={item.id} />
     )),
   },
 };
@@ -26,7 +26,9 @@ export const Movie: Story = {
 export const People: Story = {
   args: {
     title: "Cast",
-    children: creditMockData.cast.map((item) => <PeopleCard data={item} />),
+    children: creditMockData.cast.map((item) => (
+      <PeopleCard data={item} key={item.id} />
+    )),
   },
 };
 

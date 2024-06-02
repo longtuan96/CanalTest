@@ -5,7 +5,7 @@ type NavProps = {
   item: NavLinkProps;
 };
 
-export default function ({ item }: NavProps) {
+export default function NavItem({ item }: NavProps) {
   return (
     <NavLink
       key={item.to.toString()}
