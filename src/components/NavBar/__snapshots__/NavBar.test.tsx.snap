@@ -1,0 +1,94 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NavBar > render correctly 1`] = `
+<div
+  className="bg bg-black/ fixed top-0 z-20 flex w-full items-center justify-between p-3"
+  style={
+    {
+      "backgroundColor": "rgb(0,0,0,1)",
+    }
+  }
+>
+  <div
+    className="flex justify-center gap-4 "
+  >
+    <a
+      className="w-36 bg-black  text-center text-white hover:text-white active:text-white "
+      href="/movie"
+      onClick={[Function]}
+      title="MOVIES+"
+    >
+      <strong
+        className=" text-2xl"
+      >
+        My Movies
+        <sup>
+          +
+        </sup>
+      </strong>
+    </a>
+    <a
+      className="leading-9 text-white  hover:text-gray-400 active:text-white font-light opacity-50 transition-all"
+      href="/shows"
+      onClick={[Function]}
+      title="TV Shows"
+    >
+      TV Shows
+    </a>
+    <a
+      className="leading-9 text-white  hover:text-gray-400 active:text-white font-light opacity-50 transition-all"
+      href="/people"
+      onClick={[Function]}
+      title="People"
+    >
+      People
+    </a>
+    <a
+      className="leading-9 text-white  hover:text-gray-400 active:text-white font-light opacity-50 transition-all"
+      href="/more"
+      onClick={[Function]}
+      title="More"
+    >
+      More
+    </a>
+  </div>
+  <div
+    className=""
+  >
+    <div
+      className="search-box"
+    >
+      <button
+        className="btn-search flex-center focus:outline-none"
+      >
+        <div>
+          <svg
+            aria-hidden="true"
+            className="size-6 text-white"
+            data-slot="icon"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={1.5}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+      </button>
+      <input
+        className="input-search bg-red-600"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Type to Search..."
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

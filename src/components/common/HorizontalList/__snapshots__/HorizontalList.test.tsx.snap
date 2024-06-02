@@ -1,0 +1,40 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HorizontalList > render correctly 1`] = `
+<div
+  className="relative flex flex-col gap-2"
+>
+  <h4
+    className="mx-6 text-2xl font-semibold text-white sm:mx-8 md:mx-12"
+  >
+    test
+  </h4>
+  <button
+    className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded bg-black bg-opacity-50 p-2 shadow-md backdrop-blur"
+  >
+    <svg
+      aria-hidden="true"
+      className="h-6 w-6"
+      data-slot="icon"
+      fill="currentColor"
+      onClick={[Function]}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        scroll right
+      </title>
+      <path
+        clipRule="evenodd"
+        d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </button>
+  <div
+    className="scrollbar-hide relative flex flex-row gap-6 overflow-x-auto px-6 py-2 sm:px-8 md:px-12"
+  >
+    Something
+  </div>
+</div>
+`;

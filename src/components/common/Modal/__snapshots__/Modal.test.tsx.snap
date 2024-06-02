@@ -1,0 +1,60 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Modal > render correctly 1`] = `
+<div
+  aria-modal="true"
+  className="fixed inset-0 z-30 flex w-screen flex-col items-center overflow-y-auto px-4 py-8"
+  role="dialog"
+>
+  <div
+    className="fixed left-0 top-0 h-screen w-screen bg-black bg-opacity-80"
+    onClick={[Function]}
+    role="none"
+  />
+  <div
+    className="op relative z-20 flex w-fit flex-col rounded-2xl bg-zinc-900 shadow-lg transition-all"
+    role="none"
+  >
+    <div
+      className="sticky -top-8 z-20 flex items-center justify-center rounded-t-2xl"
+    >
+      <button
+        className="absolute right-0 top-0 m-3.5 h-8 w-8 rounded-full bg-black bg-opacity-25 p-1 shadow-md backdrop-blur transition-all hover:bg-opacity-0"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          data-slot="icon"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            exit popup button
+          </title>
+          <path
+            clipRule="evenodd"
+            d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+    <div>
+      <div
+        className="flex-center bg-black"
+        style={
+          {
+            "height": "80vh",
+            "width": "80vw",
+          }
+        }
+      >
+        <div
+          className="loader"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -12,7 +12,6 @@ export const SearchBox = ({}: SearchBoxProps) => {
   const handleHitEnter = useCallback(
     (e: KeyboardEvent<HTMLInputElement>) => {
       if (e.key === "Enter") {
-        console.log("test", inputValue);
         handleSearch();
       }
     },

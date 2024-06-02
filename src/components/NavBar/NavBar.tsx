@@ -20,7 +20,7 @@ export const NAVBAR_ITEMS: NavLinkProps[] = [
 
 export default function Navbar() {
   const loc = useLocation();
-  const [opacity, setOpacity] = useState(loc.pathname !== "/movie" ? 1 : 0);
+  const [opacity, setOpacity] = useState(loc.pathname !== "/movie" ? 0 : 1);
 
   const handleScroll = (e: Event) => {
     e.preventDefault();
