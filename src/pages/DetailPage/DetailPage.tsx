@@ -51,7 +51,7 @@ export const DetailPage = () => {
         backgroundImage: `url(${createImgUrl("movie", resultMovieDetail.data?.backdrop_path)})`,
       }}
     >
-      <div className=" absolute left-0 top-0 z-10  grid h-full w-full grid-cols-10 gap-4  bg-black/80 px-24 py-32">
+      <div className="z-10 grid h-fit  min-h-full  w-full grid-cols-10 gap-4 bg-black/80 px-24 py-32">
         <section id="poster" className="col-span-3">
           <img
             className="w-full"
@@ -65,7 +65,7 @@ export const DetailPage = () => {
             <strong className="fontsize-title">
               {resultMovieDetail.data?.title}
             </strong>
-            <div className=" mt-8 flex gap-3 text-sm text-zinc-300">
+            <div className="mt-8 flex gap-3 text-sm text-zinc-300">
               {resultMovieDetail.data?.genres.map((item) => (
                 <span key={item.id} className="">
                   {item.name}
