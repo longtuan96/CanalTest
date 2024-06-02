@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import createImgUrl from "../../utils/createImgUrl";
 import HorizontalList from "../../components/common/HorizontalList/HorizontalList";
-import { PeopleCard } from "./PeopleCard/PeopleCard";
 import { Loader } from "../../components/common/Loader/Loader";
 import { useGetMovieDetail } from "../../services/movie/movie";
 import { useGetCredit } from "../../services/credit/credit";
@@ -16,6 +15,8 @@ import {
 } from "@heroicons/react/24/solid";
 import { ModalType } from "../../services/video/video.type";
 import Modal from "../../components/common/Modal/Modal";
+import { PeopleCard } from "../../components/PeopleCard/PeopleCard";
+
 export const DetailPage = () => {
   const [openModal, setOpenModal] = useState<boolean>(true);
   const [seclectedMovieId, setSeclectedMovieId] = useState<number | undefined>(

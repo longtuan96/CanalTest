@@ -1,7 +1,7 @@
 import { useSearchParams } from "react-router-dom";
-import { MovieCard } from "../HomePage/MovieCard/MovieCard";
 import { useSearchMovie } from "../../services/movie/movie";
 import { Loader } from "../../components/common/Loader/Loader";
+import { MovieCard } from "../../components/MovieCard/MovieCard";
 
 export const SearchPage = () => {
   const [searchParams] = useSearchParams();

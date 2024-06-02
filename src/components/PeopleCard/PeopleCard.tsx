@@ -1,5 +1,5 @@
-import { CreditCast } from "../../../services/credit/credit.type";
-import createImgUrl from "../../../utils/createImgUrl";
+import { CreditCast } from "../../services/credit/credit.type";
+import createImgUrl from "../../utils/createImgUrl";
 
 type PeopleCardProp = {
   data: CreditCast;

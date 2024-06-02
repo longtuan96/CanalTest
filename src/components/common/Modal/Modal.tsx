@@ -8,7 +8,7 @@ import { Loader } from "../Loader/Loader";
 
 type ModalProps = {
   movieId: number;
-  onClose?: (e?: MouseEvent) => void;
+  onClose: (e?: MouseEvent) => void;
   variation: ModalType;
 };
 

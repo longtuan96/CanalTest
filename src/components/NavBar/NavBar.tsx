@@ -3,7 +3,7 @@ import NavItem from "./NavItem/NavItem";
 import { SearchBox } from "../SearchBox/SearchBox";
 import { useEffect, useState } from "react";
 
-const NAVBAR_ITEMS: NavLinkProps[] = [
+export const NAVBAR_ITEMS: NavLinkProps[] = [
   {
     to: "/shows",
     children: "TV Shows",

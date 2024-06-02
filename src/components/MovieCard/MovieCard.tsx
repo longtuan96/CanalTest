@@ -1,6 +1,6 @@
-import createImgUrl from "../../../utils/createImgUrl";
-import { MovieItemResponse } from "../../../services/movie/movie.type";
 import { Link } from "react-router-dom";
+import createImgUrl from "../../utils/createImgUrl";
+import { MovieItemResponse } from "../../services/movie/movie.type";
 
 type CardProps = {
   data: MovieItemResponse;

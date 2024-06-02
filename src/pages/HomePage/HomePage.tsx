@@ -1,11 +1,11 @@
 import { useState } from "react";
 import MovieCarousel from "../../components/MovieCarousel/MovieCarousel";
 import HorizontalList from "../../components/common/HorizontalList/HorizontalList";
-import { MovieCard } from "./MovieCard/MovieCard";
 import Modal from "../../components/common/Modal/Modal";
 import { useGetMovieList } from "../../services/movie/movie";
 import { LIST_TYPE } from "../../constants/keys";
 import { ModalType } from "../../services/video/video.type";
+import { MovieCard } from "../../components/MovieCard/MovieCard";
 
 const { MOVIE_POPULAR, MOVIE_NOW_PLAYING, MOVIE_TOP_RATED, MOVIE_UPCOMING } =
   LIST_TYPE;

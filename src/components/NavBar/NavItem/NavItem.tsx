@@ -3,7 +3,6 @@ import clsx from "clsx";
 
 type NavProps = {
   item: NavLinkProps;
-  key: number;
 };
 
 export default function ({ item }: NavProps) {
@@ -12,8 +11,8 @@ export default function ({ item }: NavProps) {
       key={item.to.toString()}
       className={({ isActive }) =>
         clsx(
-          "text-white hover:text-gray-400  active:text-white leading-9",
-          isActive ? "opacity-100 font-bold" : "opacity-50 font-light",
+          "leading-9 text-white  hover:text-gray-400 active:text-white",
+          isActive ? "font-bold opacity-100" : "font-light opacity-50",
           "transition-all",
         )
       }
