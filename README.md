@@ -1,4 +1,4 @@
-### **The Movie Plus**
+# **The Movie Plus**
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dd9b7846-44a2-422d-99a1-d9dc8de644f4/deploy-status)](https://app.netlify.com/sites/mymovieplus/deploys)
 ![coverage](https://img.shields.io/badge/coverage-~90%25-green?style=flat&logo=react&logoColor=00d7dd)
