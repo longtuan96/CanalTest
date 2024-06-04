@@ -51,7 +51,7 @@ export default function HorizontalList(props: HorizontalListProps) {
       )}
       <div
         ref={scrollDivRef}
-        className="scrollbar-hide relative flex flex-row gap-6 overflow-x-auto px-6 py-2 sm:px-8 md:px-12"
+        className="relative flex flex-row gap-6 overflow-x-auto px-6 py-2 sm:px-8 md:px-12"
       >
         {!!error && <span>{"Fetch Data failed!"}</span>}
         {children}

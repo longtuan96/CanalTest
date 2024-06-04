@@ -115,7 +115,7 @@ export default function MovieCarousel({
       </div>
 
       <div
-        className="absolute bottom-20 flex w-full items-end justify-start py-4 transition duration-500 ease-in-out"
+        className="absolute bottom-0 flex w-full items-end justify-start py-4 transition duration-500 ease-in-out lg:bottom-20"
         style={{
           transform: `translateX(${50 - widthImgItem / 2 - current * (6 + 0.5)}%)`,
           zIndex: 3,
