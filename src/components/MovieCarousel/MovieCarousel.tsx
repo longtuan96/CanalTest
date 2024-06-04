@@ -2,9 +2,9 @@ import { useState } from "react";
 import {
   ChevronRightIcon,
   ChevronLeftIcon,
-  StarIcon,
-  ArrowTrendingUpIcon,
   PlayCircleIcon,
+  FireIcon,
+  SparklesIcon,
 } from "@heroicons/react/24/solid";
 import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
 import { MovieItemResponse } from "../../services/movie/movie.type";
@@ -60,20 +60,20 @@ export default function MovieCarousel({
               />
               <div className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50">
                 <div
-                  className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-                  style={{ maxHeight: "70%" }}
+                  className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-32"
+                  style={{ maxHeight: "60%" }}
                 >
                   <h1 className="fontsize-title">{s.title}</h1>
-                  <p className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify">
+                  <p className=" fontsize-text ellipsis-line max-h-24 w-4/5  text-justify">
                     {s.overview}
                   </p>
                   <div className="flex" style={{ gap: "8%" }}>
                     <span className=" inline-flex gap-4">
-                      <StarIcon className="size-5 text-yellow-400" />{" "}
+                      <SparklesIcon className="size-5 text-yellow-400" />
                       {`${s.vote_average.toFixed(2)}/10 (${s.vote_count} votes)`}
                     </span>
                     <span className=" inline-flex gap-4">
-                      <ArrowTrendingUpIcon className="size-5 text-red-700" />
+                      <FireIcon className="size-5 text-red-700" />
                       {`${s.popularity.toFixed(0)} Trending`}
                     </span>
                   </div>
@@ -106,7 +106,7 @@ export default function MovieCarousel({
       </div>
 
       <div className="absolute top-0  flex h-full w-full items-center justify-between px-10 text-3xl text-white">
-        <button className="carousel-button" onClick={previousSlide}>
+        <button className="carousel-button " onClick={previousSlide}>
           <ChevronLeftIcon className="size-10" />
         </button>
         <button className="carousel-button" onClick={nextSlide}>

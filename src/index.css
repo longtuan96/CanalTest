@@ -4,15 +4,15 @@
 
 @layer components {
   .fontsize-title {
-    @apply sm:text-2xl md:text-5xl lg:text-8xl;
+    @apply sm:text-xl md:text-3xl lg:text-3xl xl:text-5xl 2xl:text-8xl;
   }
 
   .fontsize-subtitle {
-    @apply sm:text-xl md:text-3xl lg:text-5xl;
+    @apply sm:text-xl md:text-xl lg:text-2xl;
   }
 
   .fontsize-text {
-    @apply sm:text-sm md:text-base;
+    @apply md:text-sm xl:text-sm;
   }
 }
 
@@ -23,14 +23,29 @@
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-    display: none !important; 
+    display: none !important;
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
     -ms-overflow-style: none !important; /* IE and Edge */
     scrollbar-width: none !important; /* Firefox */
-  
+  }
+  .ellipsis-line {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+
+    @media (min-height: 700px) {
+      -webkit-line-clamp: 3; /* number of lines to show */
+      line-clamp: 3;
+    }
+    @media (min-height: 900px) {
+      -webkit-line-clamp: 4; /* number of lines to show */
+      line-clamp: 4;
+    }
   }
 }
 

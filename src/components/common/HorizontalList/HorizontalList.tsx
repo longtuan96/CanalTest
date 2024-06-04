@@ -1,5 +1,8 @@
 import { ReactNode, useEffect } from "react";
-import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
+import {
+  ChevronDoubleLeftIcon,
+  ChevronDoubleRightIcon,
+} from "@heroicons/react/24/solid";
 import { AxiosError } from "axios";
 import useScrollControl from "../../../hooks/useScrollControl";
 
@@ -29,8 +32,8 @@ export default function HorizontalList(props: HorizontalListProps) {
         {title}
       </h4>
       {!isAtStart && (
-        <button className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded bg-black bg-opacity-50 p-2 shadow-md backdrop-blur">
-          <ArrowLeftIcon
+        <button className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-full bg-black bg-opacity-50 p-2 shadow-md backdrop-blur">
+          <ChevronDoubleLeftIcon
             className="h-6 w-6"
             title="scroll left"
             onClick={scroll.bind(null, true)}
@@ -38,8 +41,8 @@ export default function HorizontalList(props: HorizontalListProps) {
         </button>
       )}
       {!isAtEnd && (
-        <button className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded bg-black bg-opacity-50 p-2 shadow-md backdrop-blur">
-          <ArrowRightIcon
+        <button className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-full bg-black bg-opacity-50 p-2 shadow-md backdrop-blur">
+          <ChevronDoubleRightIcon
             className="h-6 w-6"
             title="scroll right"
             onClick={scroll.bind(null, false)}

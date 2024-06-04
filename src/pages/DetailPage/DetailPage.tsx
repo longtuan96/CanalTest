@@ -9,9 +9,9 @@ import { BUTTON } from "../../constants/names";
 import { Button } from "../../components/common/Button/Button";
 import moment from "moment";
 import {
-  ArrowTrendingUpIcon,
   PlayCircleIcon,
-  StarIcon,
+  FireIcon,
+  SparklesIcon,
 } from "@heroicons/react/24/solid";
 import { ModalType } from "../../services/video/video.type";
 import Modal from "../../components/common/Modal/Modal";
@@ -81,11 +81,11 @@ export const DetailPage = () => {
 
             <div className="mt-3 flex gap-14">
               <span className=" inline-flex gap-4">
-                <StarIcon className="size-5 text-yellow-400" />{" "}
+                <SparklesIcon className="size-5 text-yellow-400" />{" "}
                 {`${resultMovieDetail.data?.vote_average.toFixed(2)}/10 (${resultMovieDetail.data?.vote_count} votes)`}
               </span>
               <span className=" inline-flex gap-4">
-                <ArrowTrendingUpIcon className="size-5 text-red-700" />
+                <FireIcon className="size-5 text-red-700" />
                 {`${resultMovieDetail.data?.popularity.toFixed(0)} Trending`}
               </span>
             </div>

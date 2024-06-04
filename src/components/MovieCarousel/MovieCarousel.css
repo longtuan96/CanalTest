@@ -1,5 +1,5 @@
 .carousel-button {
-  @apply z-10 bg-transparent text-white transition delay-150 ease-linear hover:border-none hover:bg-white hover:text-black focus:outline-none;
+  @apply z-10 bg-transparent text-white transition delay-150 ease-linear hover:border-none hover:bg-white hover:text-black focus:bg-transparent focus:text-white focus:outline-none;
 }
 .carousel-mask {
   background: rgb(0, 36, 17);
@@ -16,11 +16,4 @@
 .carousel-mask-hover {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-
-.fontsize-title {
-  font-size: clamp(1.875rem, 1vw + 1rem, 3.125rem);
-}
-.fontsize-text {
-  font-size: clamp(0.875rem, 1vw + 1rem, 1.25rem);
 }

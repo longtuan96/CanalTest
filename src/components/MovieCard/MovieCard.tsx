@@ -10,7 +10,8 @@ export const MovieCard = ({ data }: CardProps) => {
   return (
     <Link to={`/movie/${data.id}`} key={data.id} title={data.title}>
       <img
-        className="relative min-w-64"
+        className="relative"
+        style={{ minWidth: "10vw" }}
         src={createImgUrl("movie", data.poster_path)}
         alt={data.title}
         key={data.id}
