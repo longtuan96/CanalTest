@@ -28,7 +28,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="flex flex-col gap-5 no-scrollbar">
+    <div className="no-scrollbar flex h-full w-full flex-col gap-5">
       <section className=" h-full w-full">
         {resultPopular.isSuccess && (
           <MovieCarousel

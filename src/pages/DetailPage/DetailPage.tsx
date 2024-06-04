@@ -46,7 +46,7 @@ export const DetailPage = () => {
 
   return (
     <div
-      className="relative flex h-screen w-screen justify-center overflow-scroll bg-cover"
+      className="relative flex h-full w-full justify-center bg-cover"
       style={{
         backgroundImage: `url(${createImgUrl("movie", resultMovieDetail.data?.backdrop_path)})`,
       }}
