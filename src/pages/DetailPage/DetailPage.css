@@ -1,0 +1,4 @@
+.poster-mask-detail {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 72%);
+  @apply absolute left-0 top-0 h-full w-full;
+}

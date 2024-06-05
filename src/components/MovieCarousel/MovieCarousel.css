@@ -17,3 +17,15 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.poster-mask {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 7%, rgba(0, 0, 0, 0) 87%);
+  @apply absolute left-0 top-0 h-full w-full;
+}
+
+#carousel-pagination {
+  @media (min-aspect-ratio: 16/9) and (min-aspect-ratio: 4/3) {
+    display: none;
+  }
+}

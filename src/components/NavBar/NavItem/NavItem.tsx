@@ -11,8 +11,8 @@ export default function NavItem({ item }: NavProps) {
       key={item.to.toString()}
       className={({ isActive }) =>
         clsx(
-          "leading-9 text-white  hover:text-gray-400 active:text-white",
-          isActive ? "font-bold opacity-100" : "font-light opacity-50",
+          "leading-9 text-white hover:text-gray-400 active:text-white",
+          isActive ? "font-bold opacity-100" : "font-light opacity-80",
           "transition-all",
         )
       }

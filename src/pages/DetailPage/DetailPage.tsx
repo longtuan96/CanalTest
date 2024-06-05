@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import createImgUrl from "../../utils/createImgUrl";
 import HorizontalList from "../../components/common/HorizontalList/HorizontalList";
 import { Loader } from "../../components/common/Loader/Loader";
@@ -12,10 +12,13 @@ import {
   PlayCircleIcon,
   FireIcon,
   SparklesIcon,
+  ChevronLeftIcon,
 } from "@heroicons/react/24/solid";
 import { ModalType } from "../../services/video/video.type";
 import Modal from "../../components/common/Modal/Modal";
 import { PeopleCard } from "../../components/PeopleCard/PeopleCard";
+import useCheckMobileScreen from "../../hooks/useCheckMobileScreen";
+import "./DetailPage.css";
 
 export const DetailPage = () => {
   const [openModal, setOpenModal] = useState<boolean>(true);
@@ -24,9 +27,10 @@ export const DetailPage = () => {
   );
   const [modalVariation, setModalVariation] = useState<ModalType>("movie");
   const { movieId } = useParams();
-
+  const isMobile = useCheckMobileScreen();
   const resultMovieDetail = useGetMovieDetail({ movieId });
   const resultCredit = useGetCredit({ movieId });
+  const navigate = useNavigate();
   if (resultMovieDetail.isPending && resultCredit.isPending) {
     return (
       <div className="flex-center h-screen w-screen bg-black opacity-80">
@@ -34,6 +38,10 @@ export const DetailPage = () => {
       </div>
     );
   }
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
 
   const handleShowVideo = (
     movieId: number | undefined,
@@ -44,14 +52,14 @@ export const DetailPage = () => {
     setModalVariation(variation);
   };
 
-  return (
+  return !isMobile ? (
     <div
-      className="relative flex h-full w-full justify-center bg-cover"
+      className="relative flex h-fit  min-h-full w-full justify-center bg-cover"
       style={{
         backgroundImage: `url(${createImgUrl("movie", resultMovieDetail.data?.backdrop_path)})`,
       }}
     >
-      <div className="z-10 grid h-fit  min-h-full  w-full grid-cols-10 gap-4 bg-black/80 px-24 py-32">
+      <div className="z-10 grid h-auto min-h-full  w-full grid-cols-10 gap-4 bg-black/80 px-16 py-32">
         <section id="poster" className="col-span-3">
           <img
             className="w-full"
@@ -133,6 +141,48 @@ export const DetailPage = () => {
           onClose={() => setOpenModal(false)}
         />
       )}
+    </div>
+  ) : (
+    <div className="relative z-30 h-full min-w-full">
+      <img
+        className="object-fit w-screen"
+        alt={resultMovieDetail.data?.title}
+        src={createImgUrl("movie", resultMovieDetail.data?.poster_path)}
+      />
+      <div className="poster-mask-detail top absolute h-auto min-h-full overflow-scroll">
+        <div
+          className="mb-5 px-6 sm:px-8 md:px-12"
+          style={{ paddingTop: "95%" }}
+        >
+          <h1 className="text-2xl">{resultMovieDetail.data?.title}</h1>
+          <p className="flex gap-1 pt-2">
+            <SparklesIcon className="size-5 text-yellow-400" />
+            {`${resultMovieDetail.data?.vote_average.toFixed(2)}/10 (${resultMovieDetail.data?.vote_count} votes)`}
+          </p>
+          <p className="flex gap-2 pt-2 text-xs">
+            {resultMovieDetail.data?.genres.map((item) => (
+              <div
+                style={{ border: "1px solid slategrey" }}
+                className="rounded-md bg-slate-600 p-1"
+              >
+                {item.name}
+              </div>
+            ))}
+          </p>
+          <p className="pt-2 text-xs">{resultMovieDetail.data?.overview}</p>
+        </div>
+        <HorizontalList title="The Cast">
+          {resultCredit.data?.cast.map((item) => (
+            <PeopleCard variation="secondary" data={item} key={item.id} />
+          ))}
+        </HorizontalList>
+      </div>
+      <button
+        onClick={() => handleGoBack()}
+        className="absolute left-7 top-7 rounded bg-red-500 drop-shadow-md"
+      >
+        <ChevronLeftIcon className="m-2 size-7 text-white" />
+      </button>
     </div>
   );
 };

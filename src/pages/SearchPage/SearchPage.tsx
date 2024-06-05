@@ -22,7 +22,7 @@ export const SearchPage = () => {
         <div className=" h-screen w-screen px-10 pt-24">
           <section>
             <h1 className="fontsize-title">Search Result: {query}</h1>
-            <div className="mt-10 grid grid-cols-4 gap-20">
+            <div className="mt-10 grid grid-cols-2 gap-20 sm:grid-cols-3 lg:grid-cols-4">
               {resultSearchMovie.data.results.map((item) => (
                 <MovieCard key={item.id} data={item} />
               ))}
