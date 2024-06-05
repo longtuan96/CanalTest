@@ -1,44 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`HorizontalList > render correctly 1`] = `
-<div
-  className="relative flex flex-col gap-2"
->
-  <h4
-    className="mx-6 text-2xl font-semibold text-white sm:mx-8 md:mx-12"
-  >
-    test title
-  </h4>
-  <button
-    className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded bg-black bg-opacity-50 p-2 shadow-md backdrop-blur"
-  >
-    <svg
-      aria-hidden="true"
-      className="h-6 w-6"
-      data-slot="icon"
-      fill="currentColor"
-      onClick={[Function]}
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <title>
-        scroll right
-      </title>
-      <path
-        clipRule="evenodd"
-        d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
-        fillRule="evenodd"
-      />
-    </svg>
-  </button>
-  <div
-    className="relative flex flex-row gap-6 overflow-x-auto px-6 py-2 sm:px-8 md:px-12"
-  >
-    children
-  </div>
-</div>
-`;
-
 exports[`Movie Carousel > render correctly 1`] = `
 <div
   className="relative h-full overflow-hidden"
@@ -56,6 +17,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Godzilla x Kong: The New Empire"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/xRd1eJIDe7JHO5u4gtEYwGn5wtf.jpg"
       />
@@ -63,12 +25,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -76,7 +33,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Godzilla x Kong: The New Empire
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             Following their explosive showdown, Godzilla and Kong must reunite against a colossal undiscovered threat hidden within our world, challenging their very existence – and our own.
           </p>
@@ -101,11 +58,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               7.29/10 (2170 votes)
             </span>
             <span
@@ -121,7 +77,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -186,6 +142,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Kingdom of the Planet of the Apes"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/fqv8v6AycXKsivp1T5yKtLbGXce.jpg"
       />
@@ -193,12 +150,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -206,7 +158,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Kingdom of the Planet of the Apes
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             Several generations in the future following Caesar's reign, apes are now the dominant species and live harmoniously while humans have been reduced to living in the shadows. As a new tyrannical ape leader builds his empire, one young ape undertakes a harrowing journey that will cause him to question all that he has known about the past and to make choices that will define a future for apes and humans alike.
           </p>
@@ -231,11 +183,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               7.16/10 (592 votes)
             </span>
             <span
@@ -251,7 +202,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -316,6 +267,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Furiosa: A Mad Max Saga"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/q8IEFmEGGSGmAWfwRs23XDwdFN4.jpg"
       />
@@ -323,12 +275,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -336,7 +283,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Furiosa: A Mad Max Saga
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             As the world fell, young Furiosa is snatched from the Green Place of Many Mothers and falls into the hands of a great Biker Horde led by the Warlord Dementus. Sweeping through the Wasteland they come across the Citadel presided over by The Immortan Joe. While the two Tyrants war for dominance, Furiosa must survive many trials as she puts together the means to find her way home.
           </p>
@@ -361,11 +308,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               7.80/10 (284 votes)
             </span>
             <span
@@ -381,7 +327,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -446,6 +392,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Civil War"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/en3GU5uGkKaYmSyetHV4csHHiH3.jpg"
       />
@@ -453,12 +400,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -466,7 +408,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Civil War
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             In the near future, a group of war journalists attempt to survive while reporting the truth as the United States stands on the brink of civil war.
           </p>
@@ -491,11 +433,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               7.34/10 (887 votes)
             </span>
             <span
@@ -511,7 +452,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -576,6 +517,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="The Fall Guy"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/H5HjE7Xb9N09rbWn1zBfxgI8uz.jpg"
       />
@@ -583,12 +525,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -596,7 +533,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             The Fall Guy
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             Fresh off an almost career-ending accident, stuntman Colt Seavers has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.
           </p>
@@ -621,11 +558,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               7.41/10 (722 votes)
             </span>
             <span
@@ -641,7 +577,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -706,6 +642,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Un père idéal"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/iafs5DG5fGq7ef0acl3xlX4BFrs.jpg"
       />
@@ -713,12 +650,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -726,7 +658,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Un père idéal
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           />
           <div
             className="flex"
@@ -749,11 +681,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               6.38/10 (26 votes)
             </span>
             <span
@@ -769,7 +700,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -834,6 +765,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Godzilla Minus One"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/fY3lD0jM5AoHJMunjGWqJ0hRteI.jpg"
       />
@@ -841,12 +773,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -854,7 +781,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Godzilla Minus One
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             Postwar Japan is at its lowest point when a new crisis emerges in the form of a giant monster, baptized in the horrific power of the atomic bomb.
           </p>
@@ -879,11 +806,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               7.67/10 (1161 votes)
             </span>
             <span
@@ -899,7 +825,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -964,6 +890,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Dune: Part Two"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/xOMo8BRK7PfcJv9JCnx7s5hj0PX.jpg"
       />
@@ -971,12 +898,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -984,7 +906,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Dune: Part Two
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee.
           </p>
@@ -1009,11 +931,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               8.18/10 (4119 votes)
             </span>
             <span
@@ -1029,7 +950,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -1094,6 +1015,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="The Garfield Movie"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/2mtxXjkQOLYPOhTKoCaWVVjKlfW.jpg"
       />
@@ -1101,12 +1023,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -1114,7 +1031,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             The Garfield Movie
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             Garfield, the world-famous, Monday-hating, lasagna-loving indoor cat, is about to have a wild outdoor adventure! After an unexpected reunion with his long-lost father – scruffy street cat Vic – Garfield and his canine friend Odie are forced from their perfectly pampered life into joining Vic in a hilarious, high-stakes heist.
           </p>
@@ -1139,11 +1056,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               6.60/10 (107 votes)
             </span>
             <span
@@ -1159,7 +1075,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -1224,6 +1140,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Kung Fu Panda 4"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/kYgQzzjNis5jJalYtIHgrom0gOx.jpg"
       />
@@ -1231,12 +1148,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -1244,7 +1156,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Kung Fu Panda 4
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.
           </p>
@@ -1269,11 +1181,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               7.13/10 (1751 votes)
             </span>
             <span
@@ -1289,7 +1200,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -1354,6 +1265,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Noryang: Deadly Sea"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/42rp8MkwOEFA62wwgKcuOpP8Fjb.jpg"
       />
@@ -1361,12 +1273,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -1374,7 +1281,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Noryang: Deadly Sea
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             In the winter of 1598, the seven-year Imjin War nears an end as the Japanese Wae invaders prepare to withdraw from Joseon. Admiral Yi Sun-shin leads an allied fleet of Joseon and Ming ships to annihilate the Wae army. Joseon, Ming, and Wae forces clash at Noryang Strait, the deadly sea where Admiral Yi fights his last valiant battle.
           </p>
@@ -1399,11 +1306,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               7.81/10 (16 votes)
             </span>
             <span
@@ -1419,7 +1325,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -1484,6 +1390,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Sting"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/k37Ccgu05Am1xxgN5GaW0HX9Kkl.jpg"
       />
@@ -1491,12 +1398,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -1504,7 +1406,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Sting
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             After raising an unnervingly talented spider in secret, 12-year-old Charlotte must face the truth about her pet and fight for her family's survival.
           </p>
@@ -1529,11 +1431,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               6.59/10 (76 votes)
             </span>
             <span
@@ -1549,7 +1450,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -1614,6 +1515,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Thelma the Unicorn"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/AuKXTyCVzeIdtTe1NAQnJa1ZC7I.jpg"
       />
@@ -1621,12 +1523,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -1634,7 +1531,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Thelma the Unicorn
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             Thelma dreams of being a glamorous unicorn. Then in a rare pink and glitter-filled moment of fate, Thelma's wish comes true. She rises to instant international stardom, but at an unexpected cost. After a while, Thelma realizes that she was happier as her ordinary, sparkle-free self. So she ditches her horn, scrubs off her sparkles, and returns home, where her best friend is waiting for her with a hug.
           </p>
@@ -1659,11 +1556,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               7.10/10 (64 votes)
             </span>
             <span
@@ -1679,7 +1575,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -1744,6 +1640,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Black Lotus"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/tdkCqOQ87ns39bWtzjJYsGTloH9.jpg"
       />
@@ -1751,12 +1648,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -1764,7 +1656,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Black Lotus
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             An ex-special forces operative wages a one man war through the streets of Amsterdam to rescue his friend's daughter from the local crime syndicate.
           </p>
@@ -1789,11 +1681,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               6.47/10 (98 votes)
             </span>
             <span
@@ -1809,7 +1700,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -1874,6 +1765,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Ghostbusters: Frozen Empire"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/wODqakS0jinTUECNS6n4VomQbew.jpg"
       />
@@ -1881,12 +1773,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -1894,7 +1781,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Ghostbusters: Frozen Empire
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             When the discovery of an ancient artifact unleashes an evil force, Ghostbusters new and old must join forces to protect their home and save the world from a second Ice Age.
           </p>
@@ -1919,11 +1806,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               6.67/10 (867 votes)
             </span>
             <span
@@ -1939,7 +1825,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -2004,6 +1890,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="No Way Up"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/4woSOUD0equAYzvwhWBHIJDCM88.jpg"
       />
@@ -2011,12 +1898,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -2024,7 +1906,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             No Way Up
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             Characters from different backgrounds are thrown together when the plane they're travelling on crashes into the Pacific Ocean. A nightmare fight for survival ensues with the air supply running out and dangers creeping in from all sides.
           </p>
@@ -2049,11 +1931,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               6.43/10 (678 votes)
             </span>
             <span
@@ -2069,7 +1950,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -2134,6 +2015,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Mercy"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/lUlz0oE3zhAku7QvGoDJCeaFuiO.jpg"
       />
@@ -2141,12 +2023,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -2154,7 +2031,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Mercy
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             An ex-military doctor finds herself in a deadly battle for survival when the Irish mafia seize control of the hospital at which she works. When her son is taken hostage, she is forced to rely upon her battle-hardened past and lethal skills after realizing there’s no one left to save the day but her.
           </p>
@@ -2179,11 +2056,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               6.24/10 (53 votes)
             </span>
             <span
@@ -2199,7 +2075,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -2264,6 +2140,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Chief of Station"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/rmNlWyez5cniGtXkgixG1ezdqVk.jpg"
       />
@@ -2271,12 +2148,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -2284,7 +2156,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Chief of Station
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             After learning that the death of his wife was not an accident, a former CIA Station Chief is forced back into the espionage underworld, teaming up with an adversary to unravel a conspiracy that challenges everything he thought he knew.
           </p>
@@ -2309,11 +2181,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               5.29/10 (36 votes)
             </span>
             <span
@@ -2329,7 +2200,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -2394,6 +2265,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Abigail"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/ySgY4jBvZ6qchrxKnBg4M8tZp8V.jpg"
       />
@@ -2401,12 +2273,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -2414,7 +2281,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Abigail
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             A group of criminals kidnaps a teenage ballet dancer, the daughter of a notorious gang leader, in order to obtain a ransom of $50 million, but over time, they discover that she is not just an ordinary girl. After the kidnappers begin to diminish, one by one, they discover, to their increasing horror, that they are locked inside with an unusual girl.
           </p>
@@ -2439,11 +2306,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               6.90/10 (552 votes)
             </span>
             <span
@@ -2459,7 +2325,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -2524,6 +2390,7 @@ exports[`Movie Carousel > render correctly 1`] = `
       className="relative min-w-full"
     >
       <img
+        alt="Ape vs. Mecha Ape"
         className="object-fit h-full w-full"
         src="https://image.tmdb.org/t/p//original/jnE1GA7cGEfv5DJBoU2t4bZHaP4.jpg"
       />
@@ -2531,12 +2398,7 @@ exports[`Movie Carousel > render correctly 1`] = `
         className="carousel-mask carousel-mask-hover absolute left-0 top-0 h-full w-full bg-opacity-50"
       >
         <div
-          className=" absolute left-0 top-0 flex w-2/5 flex-col gap-y-5 pl-24 pt-40"
-          style={
-            {
-              "maxHeight": "70%",
-            }
-          }
+          className="absolute left-0 top-0 flex w-1/2 flex-col gap-y-5 pl-24 pt-16 lg:max-h-[60%] lg:pl-16 xl:max-h-[80%] xl:pt-32"
         >
           <h1
             className="fontsize-title"
@@ -2544,7 +2406,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             Ape vs. Mecha Ape
           </h1>
           <p
-            className=" fontsize-text max-h-24 w-4/5 overflow-hidden text-justify"
+            className=" fontsize-text ellipsis-line max-h-fit w-4/5 text-justify xl:text-xl"
           >
             Recognizing the destructive power of its captive giant Ape, the military makes its own battle-ready A.I., Mecha Ape. But its first practical test goes horribly wrong, leaving the military no choice but to release the imprisoned giant ape to stop the colossal robot before it destroys downtown Chicago.
           </p>
@@ -2569,11 +2431,10 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z"
                   fillRule="evenodd"
                 />
               </svg>
-               
               5.69/10 (205 votes)
             </span>
             <span
@@ -2589,7 +2450,7 @@ exports[`Movie Carousel > render correctly 1`] = `
               >
                 <path
                   clipRule="evenodd"
-                  d="M15.22 6.268a.75.75 0 0 1 .968-.431l5.942 2.28a.75.75 0 0 1 .431.97l-2.28 5.94a.75.75 0 1 1-1.4-.537l1.63-4.251-1.086.484a11.2 11.2 0 0 0-5.45 5.173.75.75 0 0 1-1.199.19L9 12.312l-6.22 6.22a.75.75 0 0 1-1.06-1.061l6.75-6.75a.75.75 0 0 1 1.06 0l3.606 3.606a12.695 12.695 0 0 1 5.68-4.974l1.086-.483-4.251-1.632a.75.75 0 0 1-.432-.97Z"
+                  d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
                   fillRule="evenodd"
                 />
               </svg>
@@ -2652,10 +2513,10 @@ exports[`Movie Carousel > render correctly 1`] = `
     </div>
   </div>
   <div
-    className="absolute top-0  flex h-full w-full items-center justify-between px-10 text-3xl text-white"
+    className="absolute  top-0 flex h-full w-full items-center justify-between text-3xl text-white lg:px-5"
   >
     <button
-      className="carousel-button"
+      className="carousel-button "
       onClick={[Function]}
     >
       <svg
@@ -2694,7 +2555,8 @@ exports[`Movie Carousel > render correctly 1`] = `
     </button>
   </div>
   <div
-    className="absolute bottom-20 flex w-full items-end justify-start py-4 transition duration-500 ease-in-out"
+    className="absolute bottom-0 hidden w-full items-end justify-start py-4 transition duration-500 ease-in-out md:flex lg:bottom-20 "
+    id="carousel-pagination"
     style={
       {
         "gap": "0.5%",

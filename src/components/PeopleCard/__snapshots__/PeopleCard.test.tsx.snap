@@ -2,10 +2,15 @@
 
 exports[`People Card > render correctly 1`] = `
 <div
-  className=" min-w-40  rounded-lg bg-white"
+  className="rounded-lg bg-white"
+  style={
+    {
+      "minWidth": "20%",
+    }
+  }
 >
   <div
-    className=" min-h-60"
+    className="min-h-fit w-full"
     id="card-image"
   >
     <img

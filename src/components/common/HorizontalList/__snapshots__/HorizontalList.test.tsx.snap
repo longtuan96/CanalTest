@@ -10,7 +10,7 @@ exports[`HorizontalList > render correctly 1`] = `
     test
   </h4>
   <button
-    className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded bg-black bg-opacity-50 p-2 shadow-md backdrop-blur"
+    className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-full bg-black bg-opacity-50 p-2 shadow-md backdrop-blur"
   >
     <svg
       aria-hidden="true"
@@ -26,7 +26,12 @@ exports[`HorizontalList > render correctly 1`] = `
       </title>
       <path
         clipRule="evenodd"
-        d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+        d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
         fillRule="evenodd"
       />
     </svg>

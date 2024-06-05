@@ -21,6 +21,7 @@ export default mergeConfig(
           "**/tailwind.config.js",
           "**/*.stories.tsx",
           "src/stories",
+          "storybook-static",
         ],
       },
       setupFiles: "./src/test/setup.ts",

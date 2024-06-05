@@ -2,7 +2,7 @@
 
 exports[`NavBar > render correctly 1`] = `
 <div
-  className="bg bg-black/ fixed top-0 z-20 flex w-full items-center justify-between p-3"
+  className="fixed top-0 z-20 flex w-full items-center justify-between bg-black p-3"
   style={
     {
       "backgroundColor": "rgb(0,0,0,1)",
@@ -28,7 +28,7 @@ exports[`NavBar > render correctly 1`] = `
       </strong>
     </a>
     <a
-      className="leading-9 text-white  hover:text-gray-400 active:text-white font-light opacity-50 transition-all"
+      className="leading-9 text-white hover:text-gray-400 active:text-white font-light opacity-80 transition-all"
       href="/shows"
       onClick={[Function]}
       title="TV Shows"
@@ -36,7 +36,7 @@ exports[`NavBar > render correctly 1`] = `
       TV Shows
     </a>
     <a
-      className="leading-9 text-white  hover:text-gray-400 active:text-white font-light opacity-50 transition-all"
+      className="leading-9 text-white hover:text-gray-400 active:text-white font-light opacity-80 transition-all"
       href="/people"
       onClick={[Function]}
       title="People"
@@ -44,7 +44,7 @@ exports[`NavBar > render correctly 1`] = `
       People
     </a>
     <a
-      className="leading-9 text-white  hover:text-gray-400 active:text-white font-light opacity-50 transition-all"
+      className="leading-9 text-white hover:text-gray-400 active:text-white font-light opacity-80 transition-all"
       href="/more"
       onClick={[Function]}
       title="More"
