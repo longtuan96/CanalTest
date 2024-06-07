@@ -22,7 +22,7 @@ import "./DetailPage.css";
 
 export const DetailPage = () => {
   const [openModal, setOpenModal] = useState<boolean>(true);
-  const [seclectedMovieId, setSeclectedMovieId] = useState<number | undefined>(
+  const [selectedMovieId, setSelectedMovieId] = useState<number | undefined>(
     undefined,
   );
   const [modalVariation, setModalVariation] = useState<ModalType>("movie");
@@ -48,7 +48,7 @@ export const DetailPage = () => {
     variation: ModalType,
   ) => {
     setOpenModal(true);
-    setSeclectedMovieId(movieId);
+    setSelectedMovieId(movieId);
     setModalVariation(variation);
   };
 
@@ -134,10 +134,10 @@ export const DetailPage = () => {
           </div>
         </section>
       </div>
-      {openModal && seclectedMovieId && modalVariation && (
+      {openModal && selectedMovieId && modalVariation && (
         <Modal
           variation={modalVariation}
-          movieId={seclectedMovieId}
+          movieId={selectedMovieId}
           onClose={() => setOpenModal(false)}
         />
       )}
@@ -164,6 +164,7 @@ export const DetailPage = () => {
               <div
                 style={{ border: "1px solid slategrey" }}
                 className="rounded-md bg-slate-600 p-1"
+                key={item.id}
               >
                 {item.name}
               </div>

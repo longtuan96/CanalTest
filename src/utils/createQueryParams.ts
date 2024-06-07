@@ -1,6 +1,8 @@
-export default (
+export default function createQueryParams(
   queryParams: Record<string, string | number | null | undefined> = {},
-) => ({
-  ...queryParams,
-  api_key: import.meta.env.VITE_THEMOVIEDB_KEY,
-});
+) {
+  return {
+    ...queryParams,
+    api_key: import.meta.env.VITE_THEMOVIEDB_KEY,
+  };
+}

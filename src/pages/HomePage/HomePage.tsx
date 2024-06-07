@@ -12,7 +12,7 @@ const { MOVIE_POPULAR, MOVIE_NOW_PLAYING, MOVIE_TOP_RATED, MOVIE_UPCOMING } =
 
 const HomePage = () => {
   const [openModal, setOpenModal] = useState<boolean>(true);
-  const [seclectedMovieId, setSeclectedMovieId] = useState<number | undefined>(
+  const [selectedMovieId, setSelectedMovieId] = useState<number | undefined>(
     undefined,
   );
   const [modalVariation, setModalVariation] = useState<ModalType>("movie");
@@ -23,7 +23,7 @@ const HomePage = () => {
 
   const handleShowVideo = (movieId: number, variation: ModalType) => {
     setOpenModal(true);
-    setSeclectedMovieId(movieId);
+    setSelectedMovieId(movieId);
     setModalVariation(variation);
   };
 
@@ -58,10 +58,10 @@ const HomePage = () => {
           })}
         </HorizontalList>
       </section>
-      {openModal && seclectedMovieId && modalVariation && (
+      {openModal && selectedMovieId && modalVariation && (
         <Modal
           variation={modalVariation}
-          movieId={seclectedMovieId}
+          movieId={selectedMovieId}
           onClose={() => setOpenModal(false)}
         />
       )}
