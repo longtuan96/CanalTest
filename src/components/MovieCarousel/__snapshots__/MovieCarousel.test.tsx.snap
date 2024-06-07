@@ -118,6 +118,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -243,6 +244,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -368,6 +370,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -493,6 +496,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -618,6 +622,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -741,6 +746,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -866,6 +872,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -991,6 +998,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -1116,6 +1124,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -1241,6 +1250,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -1366,6 +1376,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -1491,6 +1502,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -1616,6 +1628,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -1741,6 +1754,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -1866,6 +1880,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -1991,6 +2006,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -2116,6 +2132,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -2241,6 +2258,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -2366,6 +2384,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"
@@ -2491,6 +2510,7 @@ exports[`Movie Carousel > render correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="detail"
                 className=" size-6 text-white"
                 data-slot="icon"
                 fill="none"

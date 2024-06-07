@@ -95,6 +95,7 @@ export default function MovieCarousel({
                     </Button>
                     <Button className="p-0" background={false}>
                       <ExclamationCircleIcon
+                        aria-label="detail"
                         className=" size-6 text-white"
                         onClick={() => handleToDetail(s.id)}
                       />
